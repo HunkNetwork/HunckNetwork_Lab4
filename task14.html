@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <Script>
+        const changeColor = document.getElementsByTagName("body");
+        const colors = ["red","orange","yellow","green","blue","indigo","violet"];
+        let i = 0;
+        setInterval(() => { 
+          if (i < colors.length){
+            console.log(changeColor[0].style.backgroundColor = colors[i])
+            i++;
+          }
+          else{
+            i = 0;
+          }
+        }, 1000);
+    </Script>
+</html>
