@@ -1,10 +1,10 @@
 let timeOfTheDay = ["morning", "afternoon", "evening"];
 
-for (i in timeOfTheDay){
+for (i of timeOfTheDay){
     if (i === "morning"){
         console.log(`good ${i} user`)
     }
-    else if (i== "afternon"){
+    else if (i== "afternoon"){
         console.log(`good ${i} user`)
     }
     else if (i == "evening"){
@@ -16,7 +16,7 @@ for (i in timeOfTheDay){
 }
 
 
-for(i in timeOfTheDay){
+for(i of timeOfTheDay){
 
     switch (i){
         case "morning" :

@@ -1,15 +1,15 @@
 const vowelNumber = (sentence)=>{
-    sum=0
-    letters = sentence.replaceAll(" ", "").split('','');
-    console.log(letters)
+    let sum=0
+    letters = sentence.replaceAll(" ", "").split('');
     const vowels= ['a','e','i','o','u']
     for (let p = 0; p<letters.length; p++){
-        for (i in vowels){
+        for (i of vowels){
             if (letters[p]==i){
-                sum+=1;
+                sum += 1;
             }
         }
     }
+    return sum
 };
-
-console.log(vowelNumber("this is"))
+n =vowelNumber("this is");
+console.log(n)

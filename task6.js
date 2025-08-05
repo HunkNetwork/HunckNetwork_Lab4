@@ -1,14 +1,22 @@
-// counting numbers but less than 100 every second but should only print old numbers
-let i = 0;
-setTimeout(() => {
-    if(i){
-        console.log(i)
-        i++;
+    for(let i =0; i<100;i++){
+        if(i%2==0){
+            continue;
+        }
+        else{
+         console.log(i)   
+        }
     }
-    else{
-        
+
+    for(let i =0; i<100;i++){
+        if(i%2==0 && i*6>90/2){
+            break;
+        }
+        else{
+         console.log(i)   
+        }
     }
-}, 1000);
-// break is used to stop a code from running e.g if a program is running and an expected err is encountered
-// continue is used to just into another section block or statement and the current instruction is not executed
+
+
+// break is used to stop a code in loop from running e.g if a program is running and a certain condition is met break can be implemented
+// continue is used to jump a section block or statement or next iteration and the current instruction is not executed
 
