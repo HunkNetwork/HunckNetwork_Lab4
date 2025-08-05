@@ -15,7 +15,7 @@ lastname = "kibombwe"
 
 s1 = new Student("chisomo", "chinyonga")
 
-console.log(s1.printf())
+console.log(s1 instanceof Student)
 console.log(typeof fname)
-// console.log(delete)
-// console.log(s1)
+console.log(delete s1.fname)
+console.log(s1.printf())
