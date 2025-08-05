@@ -2,7 +2,7 @@
 class Student {
     constructor(fname,sname){
         this.fname = fname;
-        this.lastname = this.lastname
+        this.lastname = sname;
     }
     
     printf(){
